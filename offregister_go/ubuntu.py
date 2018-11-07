@@ -5,7 +5,7 @@ from offregister_fab_utils.fs import append_path, cmd_avail
 
 
 def install0(arch='amd64', *args, **kwargs):
-    version = kwargs.get('GOVERSION', '1.11.1')
+    version = kwargs.get('GOVERSION', '1.11.2')
 
     if cmd_avail('go'):
         current_version = run('go version', quiet=True).rpartition(' ')[0].rpartition(' ')[2][2:]
