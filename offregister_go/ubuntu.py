@@ -1,6 +1,5 @@
 from fabric.contrib.files import append
 from fabric.operations import run, sudo
-
 from offregister_fab_utils.fs import append_path, cmd_avail
 
 
