@@ -3,7 +3,7 @@ from offregister_fab_utils.fs import append_path, cmd_avail
 from patchwork.files import append
 
 
-def install0(arch="amd64", *args, **kwargs):
+def install0(c, arch="amd64", *args, **kwargs):
     version = kwargs.get("GOVERSION", "1.12.9")
 
     if cmd_avail(c, "go"):
